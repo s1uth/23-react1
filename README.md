@@ -1,3 +1,75 @@
+# 손태인
+---
+
+  3주차 23.03.13
+  -----  
+  
+  
+  ## React 
+  
+  리액트는 웹페이지 제작을 위한 JS라이브러리이다
+  주로 SPA(Single Page Application)으로 제작된다.  
+  리액트는 사용자의 편의를 위해  VirtualDOM을 이용한 비동기 처리방식으로 더욱 간편하고 빠른 렌더링 속도를 제공한다.  
+  컴포넌트를 이용하여 재사용성을 높여 개발속도를 줄이고 매우 활발한 커뮤니티로 빠른 수정을 이루고 있다. 
+
+  --- 
+ ### VirtualDOM 
+
+ VirtualDOM이란 Reac가 렌더링 되는 가상의 Document Object Model로 실제 보여지는 실물 DOM과는 다르기 업데이트와 렌더링을 비동기로 처리할 수 있다.
+
+
+ ### 비동기 처리
+
+ 비동기 처리방식은 업데이트가 일어난곳에서 부모노드와 상관없이 오로지 업데이트 된 곳만 다시 렌더링 되는 방식을 뜻한다.
+
+ ### 컴포넌트  
+
+ 컴포넌트란 리액트의 객체 단위로 리액트는 전부 컴포넌트로 이루어져있다.  
+ 컴포넌트를 더욱 작은 범위기능으로 나눌수록 재사용성이 증가한다.
+ 하지만 아무 기능이 없는 컴포넌트는 의미가 없음으로 잘 생각하여 나누어야 한다.
+
+
+  ---
+    
+      
+  2주차 23.03.06 
+  -----
+  
+  ## HTML(Hyper Text Markup Language)
+  
+  웹 사이트의 뼈대를 세우는 기초로 </> 형식을 통해 구성된다.
+  
+  ---
+  
+  ## CSS(Cascading Style Sheet)
+  
+  웹 사이트의 디자인을 할 수 StyleSheet언어이다.  
+  
+  ---
+  
+  ## JS(java script)
+  
+  동적인 웹사이트를 구현하기 위한 스크립트 언어로 다양한 기능과 반응을 추가 할 수 있다.
+  es6의 개정으로 많은 변화가 생겼다..
+     
+  ## JSON  
+  자바스크립트를 위한 파일 형식의 하나로 key와 value로 이뤄져있는 데이터를 갖는다.   
+  
+  함수의 선언 
+  
+  var   재선언 O 재할당 O  
+  let   재선언 X 재할당 O  
+  const 재선언 X 재할당 X   
+  
+  화살표 함수
+  
+  ```javascript
+    const 변수명 = () => {}
+  ```
+  
+  
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
