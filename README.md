@@ -1,6 +1,28 @@
 # 손태인
 ---
 
+  4주차 23.03.20
+  -----
+
+  ### JSX 
+
+  JSX란 Javascript + XML 이다. 즉 자바스크립에 XML이 포함된 파일 형싱라고 생각하면 된다.  
+  이것이 어떤 의미인지는 다음 코드를 보자,
+
+    const hello = <h1>Hello!!</h1>;
+
+  위의 코드를 보면 알 수 있듯이 메서드를 통해 xml 문장을 만드는 것이 아니라, 객체에 xml을 담을 수 있음으로써 더욱 간결하게 태그를 활용할 수 있게 된다.  
+
+  하지만, 몇가지 제약이 존재하는데, jsx내에서 js 문법을 사용할 경우 {} 를 통해 사용하면 된다.  
+
+    const style = { background: black, font:ariel,}
+
+    return =(
+      <div style={style}>
+          <h1 style={ color: white }>Hello!!!</h1>
+      </div> 
+    )
+    
   3주차 23.03.13
   -----  
   
