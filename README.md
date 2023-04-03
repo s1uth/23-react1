@@ -1,6 +1,81 @@
 # 손태인
 ---
 
+  5주차 23.03.27
+  -----
+
+  ### Component
+
+  리액트는 컴포넌트의 조합으로 이뤄진다. 자바스크립트의 함수와 매우 유사하다.  
+  주로 함수 컴포넌트를 사용함  
+  컴포넌트는 모두 대문자로 시작  
+  소문자를 쓰면 DOM태그로 인식한다.
+
+
+  ```javascript
+  함수형 컴포넌트
+  function Welcome(Props) {
+	  return <h1> 안녕, {props.name}</h1>;
+  }
+  ```
+
+  ```javascript
+  클래스형 컴포넌트
+  class Welcome extends React.Component {
+	  render() {
+		  return <h1> 안녕, {props.name}</h1>;
+	  }
+  }
+
+  클래스 컴포넌트는 모두 React.Component를 상속 받음
+  ```
+
+
+
+  ### Element
+
+  리액트 엘리먼트는 돔엘리먼트의 가상 버전이다.  
+  엘리먼트는 화면에 보이는 것들을 기술 해준다  
+  리액트 엘리먼트는 자바스크립트 객체로 존재한다(불변성)  
+
+  불변성이란!  
+  Immutable(불변성)  
+  -한 번 생성된 엘리먼트는 변경이 불가하다, 생성 후에는 칠드런이나 어트리뷰트를 바꿀 수 없다.  
+  -변경할 때는 엘리먼트를 새로 생성하여 기존의 엘리먼트와 변경함  
+  -즉, 상태(state)가 변경될 때 마다 새로 생성한다.  
+    
+
+    React.createElement(
+	  type,
+	  [props],
+	  […children]
+    )
+
+  엘리먼트는 위와 같은 구조로 생성되며 실제 생성 되었을 때는 
+    
+    {	
+	    type :’button’,
+		  props: {
+		    className : ’bg-green’,
+		    children: {
+				    type: ‘ b’,
+            props : {
+                children : ‘Hello, element!’
+				    }
+		    }
+	    }
+    }
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    <button class = ‘bg- green’>
+	  <b>
+		  Hello, element!
+	  </b>
+    </button>
+
+  위와 같은 형태로 생성이 된다.
+
+
+
   4주차 23.03.20
   -----
 
