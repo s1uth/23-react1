@@ -1,6 +1,46 @@
 # 손태인
 ---
 
+  6주차 23.04.03
+  -----
+
+  ### State
+
+  state란?
+  상태를 의미 하는 영어 단어로 
+  리액트에서는 데이터를 의미한다.  
+  보통 리액트에서는 사용자가 state를 정의하며, 렌더링, 데이터흐름등의 쓰이는 값만 state에 넣고, 그외의 값은 인스턴스 필드로 정의한다.
+
+  state는 자바스크립트의 객체이며, 생성자를 가진다.
+  또한, 생성자에서 정의되며, 직접 수정할 수 없다.(하지마라!)  
+  setState() 훅을 통해 수정을 하면 된다.
+
+  ### LifeCycle
+
+  리액트의 생명주기 .. 
+  생성부터 소멸까지  
+
+  컴포넌트가 게속해서 살아있는 것이 아닌 사라진다는 것을 기억하자  
+
+
+
+    출생 (Mounting)  
+    Constructor 실행   
+    컴포넌트 렌더링  
+    Component didMount() 메서드가 실행  
+
+    인생(Updating)  
+    New props  
+    setState()   
+    forceUpdate() 강제 업데이트  
+    컴포넌트가 계속 렌더링이 됨  
+    componentDidUpdate() 메서드가 실행  
+
+    사망(Unmouting)  
+    ComponentWillUnmount() 메서드가 실행   
+
+
+
   5주차 23.03.27
   -----
 
